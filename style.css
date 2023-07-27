@@ -273,6 +273,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  z-index: 3;
 }
 
 .main-screen__title {
@@ -445,7 +446,6 @@ a {
   align-items: center;
   display: flex;
   gap: 20px;
-  margin: 0px 0px 20px;
 }
 
 .start__icon {
@@ -456,13 +456,14 @@ a {
 }
 
 .start__info {
+  padding: 20px 0px 0px;
 }
 
 .start__text {
   max-width: 411px;
   opacity: 0.5;
   line-height: 160%;
-  margin: 0px 0px 80px;
+  padding: 0px 0px 80px;
 }
 
 .start__infographic {
@@ -478,7 +479,7 @@ a {
 }
 
 .infographic__count {
-  margin: 0px 0px 20px;
+  padding: 0px 0px 20px;
 }
 
 .infographic__diagramma {
@@ -486,7 +487,6 @@ a {
   align-items: center;
   justify-content: center;
   height: 80px;
-  margin: 0px 0px 35px;
 }
 
 .diagramma__count {
@@ -511,9 +511,60 @@ a {
 }
 
 .infographic__text {
+  padding: 35px 0px 0px;
   max-width: 306px;
   font-size: 14px;
   opacity: 0.5;
 }
 
 /* ------------------------------------------------------ */
+
+.advantages {
+}
+
+.advantages__container {
+}
+.advantages__title {
+  text-align: center;
+}
+.advantages__info {
+  display: flex;
+  justify-content: center;
+  gap: 82px;
+  padding: 120px 0px 0px;
+}
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.advantages__icon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages__icon img {
+  width: 100px;
+}
+
+.advantages-info__title {
+  padding: 60px 0px 30px;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.advantages__text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.advantages__text .text {
+  max-width: 358px;
+  opacity: 0.800000011920929;
+  text-align: center;
+}
