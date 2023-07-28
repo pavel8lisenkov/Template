@@ -91,7 +91,16 @@ h6 {
   src: url("./assets/fonts/roboto/roboto-v30-cyrillic-regular.woff2")
     format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* roboto-700 - cyrillic */
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/roboto/roboto-v30-cyrillic-500.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Roboto";
@@ -165,6 +174,21 @@ a {
   top: 0px;
   left: 0px;
   object-fit: cover;
+}
+
+.block__title {
+  position: relative;
+  right: 20px;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+.title__icon {
+}
+
+.title__icon img {
+  max-width: 100%;
 }
 
 .title {
@@ -440,21 +464,6 @@ a {
 .start__container {
 }
 
-.start__title {
-  position: relative;
-  right: 20px;
-  align-items: center;
-  display: flex;
-  gap: 20px;
-}
-
-.start__icon {
-}
-
-.start__icon img {
-  max-width: 100%;
-}
-
 .start__info {
   padding: 20px 0px 0px;
 }
@@ -462,7 +471,6 @@ a {
 .start__text {
   max-width: 411px;
   opacity: 0.5;
-  line-height: 160%;
   padding: 0px 0px 80px;
 }
 
@@ -554,7 +562,7 @@ a {
 .advantages-info__title {
   padding: 60px 0px 30px;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
 }
 .advantages__text {
@@ -567,4 +575,254 @@ a {
   max-width: 358px;
   opacity: 0.800000011920929;
   text-align: center;
+}
+
+/* ------------------------------------------------------ */
+
+.partners {
+}
+.partners__container {
+}
+.partners__icon {
+  transform: rotate(180deg);
+}
+
+.partners__logos {
+  padding: 60px 0px 153px;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logos__item {
+  padding: 28.5px 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------------------------------ */
+
+.program {
+}
+.program__container {
+}
+
+.program-block__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 31px;
+  margin: 0px 0px 30px;
+}
+
+.program__icon {
+}
+
+.program__text {
+  text-align: center;
+  opacity: 0.5;
+  margin: 0px 0px 90px;
+}
+
+.program__info {
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 193px;
+}
+
+.program__timeline {
+}
+
+.line {
+  margin: 0px 60px;
+  width: 6px;
+  height: 677px;
+  background: linear-gradient(142deg, #c89afc 0%, #7c6afa 100%);
+}
+
+.program__weeks {
+  display: flex;
+  flex-direction: column;
+  gap: 87px;
+}
+
+.program__week {
+  max-width: 228px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.program-week_left .program__week {
+  text-align: end;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+.program-week_right .program__week:first-child {
+  padding: 95px 0px 0px;
+}
+
+.program-week__title {
+  font-size: 14px;
+  line-height: 160%;
+  opacity: 0.5;
+}
+.program-week__text {
+}
+.program-week__line {
+}
+
+/* ------------------------------------------------------ */
+
+.teachers {
+}
+.teachers__container {
+}
+.block__title {
+}
+
+.teachers__icon {
+  transform: rotate(-45deg);
+}
+
+.teachers__list {
+  padding: 83px 100px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.teachers__item {
+}
+
+.teacher {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teacher__image {
+  margin: 0px 0px 40px;
+}
+
+.teacher__title {
+  margin: 0px 0px 15px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.teacher__speciality {
+  margin: 0px 0px 30px;
+  opacity: 0.800000011920929;
+}
+
+.teacher__button {
+  display: block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.teacher__button:hover,
+.teacher__button:focus,
+.teacher__button:active {
+  background: linear-gradient(142deg, #c89afc 0%, #7c6afa 100%);
+}
+
+/* ------------------------------------------------------ */
+
+.footer {
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer__title {
+  margin: 0px 0px 30px;
+}
+
+.footer__text {
+  opacity: 0.5;
+  margin: 0px 0px 60px;
+}
+
+.footer__form {
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 40px;
+}
+
+.form__input {
+  position: relative;
+  left: 12px;
+  width: 353px;
+  padding: 11px 30px;
+  border-radius: 50px 0px 0px 50px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+input::-moz-placeholder {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+input::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.form__submit {
+  position: relative;
+  right: 12px;
+}
+
+.form__submit:hover,
+.form__submit:focus,
+.form__submit:active {
+  opacity: 1;
+}
+
+.footer__social {
+  margin: 0px 0px 50px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(142deg, #c89afc 0%, #7c6afa 100%);
+}
+
+.social__logo {
+  width: 24px;
+  height: 24px;
+}
+
+.social__logo img {
+  width: 100%;
+}
+
+.footer__templates {
+  opacity: 0.800000011920929;
+  margin: 0px 0px 30px;
 }
