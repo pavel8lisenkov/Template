@@ -605,6 +605,79 @@ a {
 
 /* ------------------------------------------------------ */
 
+.program {
+}
+.program__container {
+}
+
+.program-block__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 31px;
+  margin: 0px 0px 30px;
+}
+
+.program__icon {
+}
+
+.program__text {
+  text-align: center;
+  opacity: 0.5;
+  margin: 0px 0px 90px;
+}
+
+.program__info {
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 193px;
+}
+
+.program__timeline {
+}
+
+.line {
+  margin: 0px 60px;
+  width: 6px;
+  height: 677px;
+  background: linear-gradient(142deg, #c89afc 0%, #7c6afa 100%);
+}
+
+.program__weeks {
+  display: flex;
+  flex-direction: column;
+  gap: 87px;
+}
+
+.program__week {
+  max-width: 228px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.program-week_left .program__week {
+  text-align: end;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+.program-week_right .program__week:first-child {
+  padding: 95px 0px 0px;
+}
+
+.program-week__title {
+  font-size: 14px;
+  line-height: 160%;
+  opacity: 0.5;
+}
+.program-week__text {
+}
+.program-week__line {
+}
+
+/* ------------------------------------------------------ */
+
 .teachers {
 }
 .teachers__container {
@@ -675,7 +748,7 @@ a {
   text-align: center;
 }
 
-.advantages__title {
+.footer__title {
   margin: 0px 0px 30px;
 }
 
@@ -691,6 +764,8 @@ a {
 }
 
 .form__input {
+  position: relative;
+  left: 12px;
   width: 353px;
   padding: 11px 30px;
   border-radius: 50px 0px 0px 50px;
@@ -709,7 +784,7 @@ input::-webkit-input-placeholder {
 
 .form__submit {
   position: relative;
-  right: 21px;
+  right: 12px;
 }
 
 .form__submit:hover,
